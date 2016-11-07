@@ -4,18 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>JS打怪练级 | seeLuck的博客</title>
+  <title>JS几个数组原生方法 | seeLuck的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本人数据结构和算法水平比较low,当年本科时就对那本厚厚的《算法导论》望而生畏。当年就没怎么学懂,懂的那一点考完试后也马上就忘光了。不过在那短短几个月里,小懂冰山一角时,牛X算法所带来的思路与效率的爽感在我心里留下了很深的印象,也使得”算法”这个词在我心中占据了一个神圣且高深的地位。">
+  <meta name="description" content="本文简单介绍几个ES5里的原生数组方法,主要是最近看别人的代码发现自己基本功有点薄弱,一些很有用的原生方法没有掌握,在这里复习一下。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS打怪练级">
-<meta property="og:url" content="http://yoursite.com/2016/10/27/JS打怪练级/index.html">
+<meta property="og:title" content="JS几个数组原生方法">
+<meta property="og:url" content="http://yoursite.com/2016/11/07/JS几个数组原生方法/index.html">
 <meta property="og:site_name" content="seeLuck的博客">
-<meta property="og:description" content="本人数据结构和算法水平比较low,当年本科时就对那本厚厚的《算法导论》望而生畏。当年就没怎么学懂,懂的那一点考完试后也马上就忘光了。不过在那短短几个月里,小懂冰山一角时,牛X算法所带来的思路与效率的爽感在我心里留下了很深的印象,也使得”算法”这个词在我心中占据了一个神圣且高深的地位。">
+<meta property="og:description" content="本文简单介绍几个ES5里的原生数组方法,主要是最近看别人的代码发现自己基本功有点薄弱,一些很有用的原生方法没有掌握,在这里复习一下。">
 <meta property="og:updated_time" content="2016-11-07T09:35:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS打怪练级">
-<meta name="twitter:description" content="本人数据结构和算法水平比较low,当年本科时就对那本厚厚的《算法导论》望而生畏。当年就没怎么学懂,懂的那一点考完试后也马上就忘光了。不过在那短短几个月里,小懂冰山一角时,牛X算法所带来的思路与效率的爽感在我心里留下了很深的印象,也使得”算法”这个词在我心中占据了一个神圣且高深的地位。">
+<meta name="twitter:title" content="JS几个数组原生方法">
+<meta name="twitter:description" content="本文简单介绍几个ES5里的原生数组方法,主要是最近看别人的代码发现自己基本功有点薄弱,一些很有用的原生方法没有掌握,在这里复习一下。">
   
     <link rel="alternative" href="/atom.xml" title="seeLuck的博客" type="application/atom+xml">
   
@@ -120,7 +120,7 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="post-JS打怪练级" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-JS几个数组原生方法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -130,7 +130,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      JS打怪练级
+      JS几个数组原生方法
     </h1>
   
 
@@ -138,84 +138,30 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>本人数据结构和算法水平比较low,当年本科时就对那本厚厚的《算法导论》望而生畏。当年就没怎么学懂,懂的那一点考完试后也马上就忘光了。不过在那短短几个月里,小懂冰山一角时,牛X算法所带来的思路与效率的爽感在我心里留下了很深的印象,也使得”算法”这个词在我心中占据了一个神圣且高深的地位。<a id="more"></a></p>
-<p>总之现在全忘光了,变成了小白,不过自己也由当年的望而生畏变成了知难而上。回顾自己某些处理数据方法写得简直是不堪入目,所以我决定开始用空余时间在<a href="https://leetcode.com" target="_blank" rel="external">leetcode</a>上刷刷题,让自己的代码变得牛逼起来!</p>
-<p>做完题后主要会对比某个高手在网上发布的解法,理解后写好思路和总结。其次也会参照讨论版里的解法。</p>
-<p>先从easy难度的题开始,然后慢慢接触高难度的。遇到了好的算法就在下面收集总结起来。</p>
-<h1 id="题目列表"><a href="#题目列表" class="headerlink" title="题目列表"></a>题目列表</h1><table>
-<thead>
-<tr>
-<th style="text-align:center">#</th>
-<th style="text-align:center">题目</th>
-<th style="text-align:center">地址</th>
-<th style="text-align:center">完成日期</th>
-<th style="text-align:center">难度</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><strong>1</strong></td>
-<td style="text-align:center"><a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="external">Two Sum</a></td>
-<td style="text-align:center"><a href="https://github.com/seeLuck/JS-leveling/blob/master/1.%20Two%20Sum" target="_blank" rel="external">JS</a></td>
-<td style="text-align:center">2016-10-27</td>
-<td style="text-align:center">easy</td>
-</tr>
-<tr>
-<td style="text-align:center">6</td>
-<td style="text-align:center"><a href="https://leetcode.com/problems/zigzag-conversion/" target="_blank" rel="external">ZigZag Conversion</a></td>
-<td style="text-align:center"><a href="https://github.com/seeLuck/JS-leveling/tree/master/6.%20ZigZag%20Conversion" target="_blank" rel="external">JS</a></td>
-<td style="text-align:center">2016-10-28</td>
-<td style="text-align:center">easy</td>
-</tr>
-<tr>
-<td style="text-align:center"><strong>7</strong></td>
-<td style="text-align:center"><a href="https://leetcode.com/problems/reverse-integer/" target="_blank" rel="external">Reverse Integer</a></td>
-<td style="text-align:center"><a href="https://github.com/seeLuck/JS-leveling/tree/master/7.%20Reverse%20Integer" target="_blank" rel="external">JS</a></td>
-<td style="text-align:center">2016-10-28</td>
-<td style="text-align:center">easy</td>
-</tr>
-<tr>
-<td style="text-align:center">8</td>
-<td style="text-align:center"><a href="https://leetcode.com/problems/string-to-integer-atoi/" target="_blank" rel="external">String to Integer (atoi)</a></td>
-<td style="text-align:center"><a href="https://github.com/seeLuck/JS-leveling/tree/master/8.%20String%20to%20Integer%20%28atoi%29" target="_blank" rel="external">JS</a></td>
-<td style="text-align:center">2016-10-31</td>
-<td style="text-align:center">easy</td>
-</tr>
-<tr>
-<td style="text-align:center">9</td>
-<td style="text-align:center"><a href="https://leetcode.com/problems/palindrome-number/" target="_blank" rel="external">Roman to Integer</a></td>
-<td style="text-align:center"><a href="https://github.com/seeLuck/JS-leveling/tree/master/9.%20Palindrome%20Number" target="_blank" rel="external">JS</a></td>
-<td style="text-align:center">2016-11-3</td>
-<td style="text-align:center">easy</td>
-</tr>
-<tr>
-<td style="text-align:center">13</td>
-<td style="text-align:center"><a href="https://leetcode.com/problems/roman-to-integer/" target="_blank" rel="external">Roman to Integer</a></td>
-<td style="text-align:center"><a href="https://github.com/seeLuck/JS-leveling/tree/master/13.%20Roman%20to%20Integer" target="_blank" rel="external">JS</a></td>
-<td style="text-align:center">2016-11-3</td>
-<td style="text-align:center">easy</td>
-</tr>
-<tr>
-<td style="text-align:center"><strong>14</strong></td>
-<td style="text-align:center"><a href="https://leetcode.com/problems/longest-common-prefix/" target="_blank" rel="external">Longest Common Prefix</a></td>
-<td style="text-align:center"><a href="https://github.com/seeLuck/JS-leveling/tree/master/14.%20Longest%20Common%20Prefix" target="_blank" rel="external">JS</a></td>
-<td style="text-align:center">2016-11-3</td>
-<td style="text-align:center">easy</td>
-</tr>
-</tbody>
-</table>
-<h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1>
+        <p>本文简单介绍几个ES5里的原生数组方法,主要是最近看别人的代码发现自己基本功有点薄弱,一些很有用的原生方法没有掌握,在这里复习一下。<a id="more"></a></p>
+<h2 id="1-forEach-amp-indexOf"><a href="#1-forEach-amp-indexOf" class="headerlink" title="1.forEach&amp;indexOf"></a>1.forEach&amp;indexOf</h2><p>一段代码把forEach和indexOf都过一遍算了。</p>
+<p>forEach第一个参数是一个fun，其参数为数组的每一个元素。第二个参数是一个对象，为fun执行的上下文环境，默认为window（一般情况下）。indexOf第一个参数为查询的元素，返回其index，可接受第二个参数，即从哪个index开始正序搜索，lastIndexOf为逆序搜索。（只是搜索的方向不同，返回的index还是正序来的）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var obj = &#123;</div><div class="line">    arr: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;],</div><div class="line">    location: function (ele) &#123;</div><div class="line">        console.log(this.arr.indexOf(ele))</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">obj.arr.forEach(obj.location, obj);</div></pre></td></tr></table></figure></p>
+<p>关于forEach，学习过程中发现它的效率并不是很高，最近的搬砖中我会尝试用for…of去代替它，至于forEach的第二个参数index，也可以用for(let [index, ele] of arr.entries())这种牛X的写法取到。</p>
+<p>某种程度上说这是es6在forEach上进行的优化。forEach里无法中断遍历，for…of可操作性更强。它们底层都是去调用数组（说对象应该更恰当，但是又并不是为遍历对象设计的方法）的Iterator接口实现遍历，差别是for…of面向的对象是在数据结构的层级上的（没错这句话我就是装个逼，具体啥意思其实我也说不太清，深入的话涉及了es6蛮大一块知识，此博文旨在复习数组的原生方法，其他的东西以后我研究透了再单独写）</p>
+<h2 id="2-map-amp-filter"><a href="#2-map-amp-filter" class="headerlink" title="2.map&amp;filter"></a>2.map&amp;filter</h2><p>以后我文章的特色就是用尽可能少的代码涵盖更多的知识点，复习起来一目了然。四个方法都是遍历数组。</p>
+<p>map是对每个元素进行操作并将<strong>新值</strong>返回组成一个新数组，filter是删除经过操作后值==0的<strong>操作前</strong>的项。注意是弱等于。两个方法都不会改变原数组。</p>
+<p>some和every返回一个布尔值，分别代表数组中的每一个项是否部分/全部满足方法里的条件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var arr = [0, 1, 2, 3];</div><div class="line">var testMap = arr.map(function (item) &#123;</div><div class="line">    return item * 2; //0,2,4,6</div><div class="line">&#125;);</div><div class="line">var testFilter = arr.filter(function (item) &#123;</div><div class="line">    return item - 1; // 0,2,3</div><div class="line">&#125;);</div><div class="line">var testSome = arr.some(function (item) &#123;</div><div class="line">    return item &gt; 1; // true</div><div class="line">&#125;);</div><div class="line">var testEvery = arr.every(function (item) &#123;</div><div class="line">    return item &gt; 1; // false</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<h2 id="3-reduce"><a href="#3-reduce" class="headerlink" title="3.reduce"></a>3.reduce</h2><p>这个方法是我写本篇文章的原因，因为我在看他人代码时发现这个方法我居然都没见过。实在是惭愧。本来希望自己的博客一翻出来像大牛的一样全讲的是高深莫测的技术点。不过知耻而后勇吧，既然自己有基础知识的缺陷就要直面他。<br>首先知道reduce可以使用在对数组进行迭代操作的时候，这个方法的功能就能更好理解了。</p>
+<p>reduce接收一个fun和一个可选参数。先说fun的四个参数，previousValue代表上一次回调方法返回的值，currentValue代表此次遍历的数组项，currentIndex代表其index，array代表原数组。</p>
+<p>当initialValue存在时，第一次循环previousValue为initialValue，currentValue为数组的第一项（index===0），方法执行arr.length次，当initialValue不存在时，第一次循环previousValue为数组的第一项，currentValue为数组的第二项，此时currentIndex===1，方法执行arr.length-1次。不理解的话把下面方法执行打印各参数就懂了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr = [1, 2, 3], initialValue = 10;</div><div class="line">var sum = arr.reduce(function (previousValue, currentValue, currentIndex, array) &#123;</div><div class="line">    return previousValue + currentValue;</div><div class="line">&#125;,initialValue);</div></pre></td></tr></table></figure></p>
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p>其实数组还有一些方法，有偶尔接触到的一些类似堆栈操作的方法，还有只学过没用过的find(),includes()等方法，更有一些传说级别的of,from等成员方法。以后觉得有必要再一一添加。</p>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/10/27/JS打怪练级/" class="archive-article-date">
-  	<time datetime="2016-10-27T14:09:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-27</time>
+      <a href="/2016/11/07/JS几个数组原生方法/" class="archive-article-date">
+  	<time datetime="2016-11-07T09:27:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-07</time>
 </a>
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 	</div>
 
       
@@ -228,18 +174,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/11/07/JS几个数组原生方法/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JS几个数组原生方法
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/10/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2016/10/27/JS打怪练级/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JS打怪练级</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -273,7 +210,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="JS打怪练级" data-title="JS打怪练级" data-url="http://yoursite.com/2016/10/27/JS打怪练级/"></div>
+	<div class="ds-thread" data-thread-key="JS几个数组原生方法" data-title="JS几个数组原生方法" data-url="http://yoursite.com/2016/11/07/JS几个数组原生方法/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
