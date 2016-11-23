@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>理解神的思想 | seeLuck的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="To iterate is human,to recurse divine.  —— L. Peter Deutsch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="理解神的思想">
+<meta property="og:url" content="http://yoursite.com/2016/11/23/理解神的思想/index.html">
+<meta property="og:site_name" content="seeLuck的博客">
+<meta property="og:description" content="To iterate is human,to recurse divine.  —— L. Peter Deutsch">
+<meta property="og:image" content="https://seeluck.github.io/image/posts/pic1.jpg">
+<meta property="og:updated_time" content="2016-11-23T09:49:22.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="理解神的思想">
+<meta name="twitter:description" content="To iterate is human,to recurse divine.  —— L. Peter Deutsch">
+<meta name="twitter:image" content="https://seeluck.github.io/image/posts/pic1.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="seeLuck的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="/image/avatar.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">seeLuck</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/seeLuck" title="github">github</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">seeLuck</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="/image/avatar.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">seeLuck</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/seeLuck" title="github">github</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-理解神的思想" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      理解神的思想
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>To iterate is human,to recurse divine.  —— L. Peter Deutsch<a id="more"></a></p>
+<h2 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h2><p>只要是接触过IT的，相信对”迭代”和”递归”这两个词并不陌生。我在最初认识学习它们的时候，甚至还带有一丝的不屑，因为那几段示例代码对我这种智商120+的天才实在是太easy了（手动滑稽）当然，今天这篇博文就证明了我当年是too young too simple.</p>
+<p>这点自省并不是顿悟，是最近在leetcode做有些题一上来就想着用递归，但是递来递去也没归出来。后来看到别人的recursion答案，我写了50行越写越乱的代码被短短的5行给华丽丽地秒杀，突然发现自己对递归的理解实在是太过肤浅，更不要说实际运用了。</p>
+<p>然后看到了开头的那句话，”人理解迭代，神理解递归。”瞬间对”递归”由轻视变成了仰视（哎哟脖子疼了）</p>
+<p>既然有成为大神的志向，就要尝试着理解神的思维。本篇文章的理解可能不完全正确或者足够深刻。因为我小窥”递归”之后，觉得这个概念不是几天内就能信手拈来的。以后会随着理解深入不断更新。</p>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p><em>你想知道递归是什么，你得先知道什么是递归。To understand recursion, you must understand recursion.</em></p>
+<p>如果要解释什么是递归的话，这篇文章到这里就已经可以结束了。。。下图是google给出的答案。<br><img src="https://seeluck.github.io/image/posts/pic1.jpg" alt="pic1"></p>
+<p>当然这些都是玩笑了，从程序的角度来说，这样的递归是只有递没有归的，程序会陷入死循环。这样的答案也无法让人满意（只能让神满意）</p>
+<p>不过首先可以通过这道题来说说我理解的迭代和递归：</p>
+<blockquote>
+<p>你知道递归是什么吗？<br><strong>迭代</strong>：<br>问：你知道递归是什么吗？<br>答：我想想..不知道（1次）<br>问：你知道递归是什么吗？<br>答：我又想想..不知道（2次）<br>…..<br>问：你知道递归是什么吗？<br>答：我再想想..还是不知道（n次）<br><strong>递归</strong>：<br>问：你知道递归是什么吗？<br>问(答)：你得先知道什么是递归<br>问(答)：你得先知道什么是递归<br>…..（n次以后）<br>问(答)：你得先知道什么是递归<br><code>答：问什么问？我不知道！</code><br>答：哦，原来我不知道<br>答：哦，原来我不知道<br>…..（n次）<br>答：哦，原来我不知道</p>
+</blockquote>
+<p>迭代就不说了，观察一下递归。发现递归的过程其实是自己在问自己发问，不断地更进一步追寻问题的答案，最后把自己绕晕了，一拍桌子说”老子不知道什么是递归！”。然后这些问题全部都有了答案，那就是”不知道”</p>
+<p>有几个要点，1、每次自己问自己的问题都一样，或者说是不断规律性细化，2、有一个回答问题的关键点，3、在关键点出现之前所有问题都是挂起的，放在一个栈列中，当关键点出现后，全部问题都得到了回归。</p>
+<h2 id="没错这里开始才是正文"><a href="#没错这里开始才是正文" class="headerlink" title="没错这里开始才是正文(^__^)"></a>没错这里开始才是正文(<em>^__^</em>)</h2><p>到这里其实递归的概念基本上讲完了。当然这并没有结束，因为这就是我当年那个too young too simple时候的理解。知道神是个什么，与理解神的思想、模仿神的行为之间是有巨大差距的。</p>
+<p>最近学习递归的过程，让我回想起了当年高中时期被数学归纳法支配的恐惧。虽然完全想不起数归是干嘛的了，不过我感觉它们之间肯定是有相似之处的。</p>
+<p>我在这里并不是想去剖析递归的细节，因为这和递归自己本身的过程一样，对每一步的追究其实没有多少意义。这就是为什么读书生涯很多时候把递归的过程细节都快把脑袋想破了，然而对递归的理解依然原地踏步。参考网上的资料，说的关于”递”和”归”的概念，自身引用，方法栈等等，其实只是基础，或者说嵌入了计算机的实现原理。如果不跳到一个更高的角度去看问题，就永远会停留在不会使用递归的层面。</p>
+<p>回到文章最开头的那句话。假设真的问你一个”你知道递归是什么吗”的问题，正常人（一不小心就把程序员说成了非正常人）都会按照迭代的思想去一步步解答问题。</p>
+<p>为何自己在解决问题时想不到去递归，或者用得不是很好。因为没有形成这样一种思路。首先递归解决的并不是整个问题，而是针对问题中一直存在并重复出现的某种现象去进行解答。解答只需要解决这个现象，能够自圆其说，就够了。</p>
+<p>所以其实主要的难点就在分析得出这个现象上。这个现象不仅要满足上面所说的3个要点，最大的特征是涵盖了整个问题。所以说具备递归的思想，其实并不是什么计算机或者数学问题，而是一个哲学流问题，是你对事件的分析能力。</p>
+<p>打个比方，切蛋糕，让你切成8份，很多人都会采用不断地对半切的方式，这其实就是一种递归思想，一种”非正常人”思想。首先说说”正常人”思想，就是直接开始切1份，然后再切1份，不断迭代，直到产生了8份蛋糕。而对半分的切法，其实并没有向迭代一样直面问题，而是间接地把问题转换成了一个不断向答案逼近的重复事件。</p>
+<p>然而为何很多人在切蛋糕的问题上能瞬间且不经意地使用了递归思想，是因为我们从小就在这个问题或者相似的问题上有过潜移默化地训练，同时人对与对半等分的事件也会比较敏感（这个是我猜的，具体是不是那还要扯到心理学）。我相信在思维未开化的人猿时期分食物的时候，大多数情况情况都是你一块我一块，一点一点分的，那些一上来就直接中间撕开的，后来都进化成了程序猿…</p>
+<h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><p>开始加点难度。直接讲经典的递归题，汉诺塔。答案与分析网上有很多，看完之后总觉得似懂非懂，不知道自己该不该懵逼。这说明我感受到了递归的存在，但是我不知道递归在哪，但是递归的精髓就是，你并不需要知道它到底在哪，你只需要知道它大概在这里就OK了。</p>
+<p>汉诺塔的关键点比较隐秘，是因为如果按照正常的思维去移动盘子，比如说尝试着移动3层或者4层的汉诺塔，你很难发现什么明显的规律，即使发现了，也会知道这个规律比较复杂。正常的思维就是A柱移动到B柱，然后A再移动到C等等，然后尝试通过迭代这个过程，去完成游戏。</p>
+<p>而在这里递归的思想就不像切蛋糕那样清晰可见，比起中间切一刀的这种具体事件来说要抽象一些，不过其实也没差多少。下面就来说说汉诺塔的递归思维。</p>
+<p>假设有ABC三个柱子，要把盘子从A移动到C。A柱上从小到大(从上至下)一共有Xn个盘子。</p>
+<p>抛开正常思维从A-&gt;B,A-&gt;C…这样挪的步骤。最后一步是把最小的那个盘子X1放到C上，那么倒数第二大步就是把X2放到C上，以此类推，中间肯定有一步是把Xn放到C上。这个关键的步骤一旦发生，这个盘子就不会再从C移走了，相当于弹栈。</p>
+<p>正序思维，也就是说第一步其实是把Xn放到C上，要实现这一步，首先要把X1~Xn-1放到B上。这不就是一个层数为n-1的汉诺塔么？递归思想瞬间就产生了。</p>
+<p>首先定义一个<code>fn move(n,A,B,C)</code>,它的作用是把n个盘子从A移动到C，B作为辅助。牢记这个定义非常重要。递归中，对方法的input,conduct,output有清晰的定义，是能否把递归想清楚的关键。</p>
+<p>在这个方法里，首先执行上述第一步，<code>move(n-1,A,C,B)</code>。第二步，把A剩下的最后一个盘子移动到C上<code>console.log(A+&#39;-&gt;&#39;+C)</code>。这样就行了么？别忘了还有n-1个盘子在B上呢！该怎么办呢？我们前面不是定义了一个方法嘛~第三步，<code>move(n-1,B,A,C)</code>。那么移动到什么时候才算结束呢？想想这个方法的定义，不难得出n至少为1的时候，这个方法才有执行的意义。所以上述三个步骤要在<code>n&gt;0</code>的条件下才能执行。</p>
+<p>OK，把上面的过程拼起来<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function move(n,A,B,C)&#123;         //方法定义</div><div class="line">    if(n&gt;0)&#123;                    //执行条件</div><div class="line">        move(n-1,A,C,B);        //第一步</div><div class="line">        console.log(A+&apos;-&gt;&apos;+C);  //第二步</div><div class="line">        move(n-1,B,A,C)         //第三步</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>举手：然后呢？<br>答：没了。<br>卧槽就没了，一共就7行代码？我不信！执行一遍试试。移动3层汉诺塔。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">testcast:</div><div class="line">3,&apos;A&apos;,&apos;B&apos;,&apos;C&apos;</div><div class="line"></div><div class="line">run:</div><div class="line">move(3,&apos;A&apos;,&apos;B&apos;,&apos;C&apos;);</div><div class="line"></div><div class="line">output:</div><div class="line">A-&gt;C</div><div class="line">A-&gt;B</div><div class="line">C-&gt;B</div><div class="line">A-&gt;C</div><div class="line">B-&gt;A</div><div class="line">B-&gt;C</div><div class="line">A-&gt;C</div></pre></td></tr></table></figure></p>
+<p>好像按照这样移动真的成功了耶~可以加大层数再试试，这里因为篇幅就不列出了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>那么问题来了，我到底具体写了什么？我曾经不止一次在这种时候回头去看刚刚这段代码的过程，发现自己都是一脸懵逼的。代码里每句话的意思，甚至包括方法的定义，好像都是一个模糊的概念。但是一个看似复杂的问题，却这样被解决了。</p>
+<p>其实想不清具体的过程，那就对了。回到文章最开头的那句话，这个过程其实并不是给人来想清楚的，人只需要有这样一个思想就够了，然后交给计算机以非常粗暴的方式去实现。</p>
+<p>何为递归？就是在你问这个问题的时候，你心中已经有答案了。</p>
+<p>本文观点为原创，如需转载请标明出处<a href="https://seeluck.github.io/2016/11/23/理解神的思想/" target="_blank" rel="external">https://seeluck.github.io/2016/11/23/理解神的思想/</a></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/23/理解神的思想/" class="archive-article-date">
+  	<time datetime="2016-11-23T09:45:00.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-23</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/07/JS几个数组原生方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JS几个数组原生方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="理解神的思想" data-title="理解神的思想" data-url="http://yoursite.com/2016/11/23/理解神的思想/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"seeluck"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 seeLuck
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/javascript/" style="font-size: 20px;">javascript</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a> <a href="/tags/算法/" style="font-size: 15px;">算法</a>
+    			</div>
+    	</section>
+    
+
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">还需一点时间才能成长为老司机</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
